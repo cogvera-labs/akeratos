@@ -7,3 +7,4 @@ Every row runs shape version 1: the `core-10m` model, 2 sequences of 2,048 token
 | Chip | GPU cores | Memory | macOS | Form | MLX | Step off (ms) | Step on (ms) | On/off | Table GB/s (estimate) | Peak on (GiB) | Person |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Apple M4 Max | 40 | 48 GB | 26.6.2 | laptop | 0.32.4 | 98.1 | 115.5 | 1.178 | 0.0323 | 6.24 | [BhodiSea](https://github.com/BhodiSea) |
+| Apple M4 Max | 40 | 128 GB | 26.6.2 | desktop | 0.32.4 | 97.4 | 111.9 | 1.148 | 0.0334 | 6.24 | [brendanboyle87](https://github.com/brendanboyle87) |

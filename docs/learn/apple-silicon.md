@@ -12,7 +12,7 @@ That combination, lots of memory and modest compute, is what Akeratos's design i
 
 Consumer hardware has the memory to hold a lot of knowledge, but not the compute to train ever larger general models, so Cogvera Labs works on small, specialised ones.
 
-Every run so far has been on one MacBook Pro with an M4 Max and 48 GB of memory.
+Every training run so far has been on one MacBook Pro with an M4 Max and 48 GB of memory.
 
 ## MLX
 

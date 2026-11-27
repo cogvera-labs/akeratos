@@ -4,7 +4,7 @@ These commands rebuild Billet's training data, train Billet and its twin, and sc
 
 ## What you need
 
-- A Mac with Apple silicon and macOS 14.0 or later, the oldest macOS that [MLX supports](https://ml-explore.github.io/mlx/build/html/install.html). Every run so far has been on one MacBook Pro with an M4 Max (40 GPU cores, 48 GB).
+- A Mac with Apple silicon and macOS 14.0 or later, the oldest macOS that [MLX supports](https://ml-explore.github.io/mlx/build/html/install.html). Every training run has been on one MacBook Pro with an M4 Max (40 GPU cores, 48 GB).
 - About 57 GB of free disk to build the data, plus the checkpoints. The data ends as a 28.5 GB download and a 16.4 GB store.
 - [uv](https://docs.astral.sh/uv/) 0.13.6 or newer.
 

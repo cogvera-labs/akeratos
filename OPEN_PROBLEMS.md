@@ -6,7 +6,7 @@ The metric everywhere is **held-out bits per byte**, which does not depend on th
 
 To take one, open a pull request with your result and its logs. [CONTRIBUTING.md](CONTRIBUTING.md) says what to send.
 
-Every figure below is for a MacBook Pro with an M4 Max and 48 GB of memory, the only Mac any run has used.
+Every figure below is for a MacBook Pro with an M4 Max and 48 GB of memory, the only Mac any training run has used.
 
 ## Does the table pay off at equal wall-clock?
 
@@ -32,6 +32,6 @@ Every figure below is for a MacBook Pro with an M4 Max and 48 GB of memory, the 
 ## The table's cost on each Mac
 
 **Question.** How long do the table's gather, update and write-back take per step on each Apple chip and memory size, and where does the time go?
-**Baseline.** The M4 Max row in [the bench rows](results/bench/README.md).
+**Baseline.** The M4 Max rows in [the bench rows](results/bench/README.md).
 **Answer.** One row from a Mac not yet listed there: the step-time ratio, the table's bandwidth and peak memory.
 **On a Mac.** `uv run bake bench` measures it in 10 minutes or less, on mains power, with a table of 1.0B numbers (1.9 GiB).

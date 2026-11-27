@@ -10,11 +10,11 @@ Akeratos is built on [MLX](https://github.com/ml-explore/mlx), Apple's array fra
 
 ## Problems worked around
 
-| Problem | Upstream | Status on 2026-11-12 | What Akeratos does |
+| Problem | Upstream | Status on 2026-11-27 | What Akeratos does |
 |---|---|---|---|
 | On the CPU, in MLX 0.32.3, a reduction over a whole array of more than 2^31 elements returns the identity, such as a sum of 0 | [mlx#4549](https://github.com/ml-explore/mlx/pull/4549) | Fixed in 0.32.4 | Keeps every table shard below 2^31 elements |
-| On the CPU and on Metal, a reduction whose reduced axes together hold more than 2^31 elements returns the identity, in 0.32.4 too | Not reported yet | Not fixed | The same limit |
-| `mx.fast.cross_entropy` returns wrong gradients for large non-contiguous inputs on Metal | [mlx#4686](https://github.com/ml-explore/mlx/issues/4686) | Fixed on MLX's main branch by [mlx#4702](https://github.com/ml-explore/mlx/pull/4702) on 2026-10-27; in no release yet | Makes the logits contiguous before the loss |
+| On the CPU and on Metal, a reduction whose reduced axes together hold more than 2^31 elements returns the identity, in 0.32.4 too | [mlx#4888](https://github.com/ml-explore/mlx/pull/4888) | Fixed in 0.32.5 | The same limit |
+| `mx.fast.cross_entropy` returns wrong gradients for large non-contiguous inputs on Metal | [mlx#4686](https://github.com/ml-explore/mlx/issues/4686) | Fixed in 0.32.5 by [mlx#4702](https://github.com/ml-explore/mlx/pull/4702) | Makes the logits contiguous before the loss |
 
 The shard limit, 2^31 − 2^20 elements, is `SHARD_LIMIT` in [`akeratos/table/config.py`](https://github.com/cogvera-labs/akeratos/blob/main/akeratos/table/config.py). The cross-entropy guard is `mx.contiguous` in [`akeratos/train/loop.py`](https://github.com/cogvera-labs/akeratos/blob/main/akeratos/train/loop.py) and in `speedrun/train.py`.
 
