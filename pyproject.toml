@@ -38,6 +38,9 @@ cpu = ["mlx[cpu]>=0.32.4,<0.33; sys_platform == 'linux'"]
 # Reserved; it conflicts with `cpu`.
 cuda13 = ["mlx[cuda13]>=0.32.4,<0.33; sys_platform == 'linux'"]
 eval = ["mlx-lm>=0.32,<0.33", "lm-eval>=0.4.13,<0.5"]
+# IFEval's checker under lm-eval: langdetect and immutabledict. langdetect has
+# no Python 3 wheel, so installing this extra builds it from source.
+ifeval = ["lm-eval[ifeval]>=0.4.13,<0.5"]
 wandb = ["wandb>=0.30"]
 plot = ["matplotlib>=3.11"]
 

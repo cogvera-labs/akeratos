@@ -36,7 +36,7 @@ def requirement_name(requirement: str) -> str:
     return re.sub(r"[-_.]+", "-", match.group(1)).lower()
 
 
-EXTRAS = {"cpu", "cuda13", "eval", "wandb", "plot"}
+EXTRAS = {"cpu", "cuda13", "eval", "ifeval", "wandb", "plot"}
 
 
 def _metadata(whl):
