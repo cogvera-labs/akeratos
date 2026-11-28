@@ -1,7 +1,8 @@
 # The environment of the scripts in scripts/data/, locked with wheel hashes for Python 3.12 on macOS arm64
 # (aarch64-apple-darwin). It is resolved from huggingface-hub==2.2.0, tokenizers==0.23.3, pyarrow==26.0.0 and
 # numpy==2.5.3 (prepare_store.py's PINNED); hf-xet and the rest come with them. Security advisories were not
-# checked when it was locked ❓. Install it into a fresh Python 3.12 venv, apart from the one MLX runs in:
+# checked when it was locked ❓; filelock moved from 4.1.1 to 4.2.1 on 2026-11-28 for the advisories
+# against it. Install it into a fresh Python 3.12 venv, apart from the one MLX runs in:
 #   uv venv --managed-python --python 3.12 ~/.venvs/mf-data
 #   uv pip install --python ~/.venvs/mf-data/bin/python --require-hashes -r scripts/data/requirements.txt
 anyio==4.15.1 \
@@ -10,9 +11,9 @@ anyio==4.15.1 \
 click==8.5.0 \
     --hash=sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360 \
     --hash=sha256:ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34
-filelock==4.1.1 \
-    --hash=sha256:3f4a557945a7b0f95efeb1f432267affe5d45ac8ddde2aed1b97ebb62382c089 \
-    --hash=sha256:7ba0927482c5a814b0a7f391d029ccdb8010f576f0a74c0dcde1811e8bc4c1b6
+filelock==4.2.1 \
+    --hash=sha256:7be2662e9e826b9bba28afc0f843a123280d799a2ea44bb5d35ccec67905ae44 \
+    --hash=sha256:c4c937ccac2a813cee448e662a56366cfb374c0f8702e75f295c412cc1c5d5a3
 fsspec==2026.9.0 \
     --hash=sha256:0f08147951c8cb31d844c3547d631053b127863b60be04cf06e121333ee0e2fe \
     --hash=sha256:8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f
