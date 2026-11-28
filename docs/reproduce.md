@@ -30,7 +30,7 @@ The other commands, on the same Mac:
 | `bake evaluate` on Billet's release | 36 min | |
 | `bake evaluate` on the twin's release | 18 min | |
 
-Smaller Macs are untested: [a bench row](https://github.com/cogvera-labs/akeratos/issues/new?template=bench.yml) from yours is wanted.
+8 GB Macs are untested: [a bench row](https://github.com/cogvera-labs/akeratos/issues/new?template=bench.yml) from yours is wanted.
 
 ## 1. Set up
 

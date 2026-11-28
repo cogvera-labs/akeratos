@@ -8,3 +8,4 @@ Every row runs shape version 1: the `core-10m` model, 2 sequences of 2,048 token
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Apple M4 Max | 40 | 48 GB | 26.6.2 | laptop | 0.32.4 | 98.1 | 115.5 | 1.178 | 0.0323 | 6.24 | [BhodiSea](https://github.com/BhodiSea) |
 | Apple M4 Max | 40 | 128 GB | 26.6.2 | desktop | 0.32.4 | 97.4 | 111.9 | 1.148 | 0.0334 | 6.24 | [brendanboyle87](https://github.com/brendanboyle87) |
+| Apple M6 | 12 | 16 GB | 27.2.1 | desktop | 0.32.4 | 168.9 | 186.6 | 1.105 | 0.02 | 6.24 | [BhodiSea](https://github.com/BhodiSea) |
